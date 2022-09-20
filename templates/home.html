@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>web-engine</title>
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/sunny/jquery-ui.css">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename= 'images/favicon.svg') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'css/style.css') }}">
+</head>
+<body>
+<div class="main-container">
+    <div class="left-bar">
+        <div id="mydiv1" >
+            <img class="note-icon1" src="{{ url_for('static', filename= 'images/modbus-note.svg') }}" draggable="true" >
+        </div>
+       <div id="mydiv2">
+            <img class="note-icon2" src="{{ url_for('static', filename= 'images/bacnet-note.svg') }}" draggable="true" >
+        </div>
+    </div>
+    <div class="center" ></div>
+    <div class="right-bar">
+        <div class="resize">Resizable</div>
+    </div>
+</div>
+
+
+
+
+
+</body>
+<script src="{{ url_for('static', filename= 'js/main.js') }}"></script>
+
+</html>

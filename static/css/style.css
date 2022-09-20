@@ -1,0 +1,39 @@
+
+
+.main-container {
+    height: 920px;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 0.3fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.left-bar {
+    background-color: cadetblue;
+    cursor: crosshair;
+    grid-area: 1 / 1 / 2 / 2;
+}
+.center {
+    background-color: #303434;
+
+    grid-area: 1 / 2 / 2 / 3;
+}
+.right-bar {
+    background-color: cadetblue;
+
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+
+#mydiv1,#mydiv2{
+    margin: 20%;
+    margin-top: 5%;
+}
+
+.resize{
+    height: 100px;
+    width: 200px;
+    background-color: indianred;
+}
+
